@@ -1,0 +1,71 @@
+/* General styles for the body */
+html, body {
+    background: linear-gradient(120deg, #0072ff, #00c6ff); /* Professional blue gradient */
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Clean font */
+    color: white; /* Text color for contrast */
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Box-sizing for all elements */
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centered content with padding for readability */
+body {
+    max-width: 900px; /* Limit content width for readability */
+    margin: 20px auto; /* Center content with spacing */
+    padding: 20px;
+}
+
+/* Header styles */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #ffffff; /* Standout header color */
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 30px 0 10px 0;
+    text-transform: uppercase;
+    border-bottom: 2px solid white; /* Subtle divider */
+    padding-bottom: 5px;
+    font-weight: 600;
+    color: #f0f0f0;
+}
+
+/* Link styles */
+a {
+    font-size: 1.2em;
+    color: #cce7ff; /* Light blue for good contrast */
+    text-decoration: none; /* Remove default underline */
+    display: inline-block; /* Prevent collapse in layout */
+    margin: 10px 0; /* Spacing between links */
+    padding: 5px 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px; /* Subtle rounded corners */
+}
+
+a:hover {
+    color: #005cbf; /* Slightly darker blue for hover effect */
+    background-color: white; /* Highlight the link on hover */
+}
+
+/* Horizontal rule styling */
+hr {
+    border: none;
+    border-top: 2px solid rgba(255, 255, 255, 0.5); /* Light white line */
+    margin: 20px 0; /* Spacing above and below */
+}

@@ -1,71 +1,119 @@
-/* General styles for the body */
-html, body {
-    background: linear-gradient(120deg, #0072ff, #00c6ff); /* Professional blue gradient */
-    background-size: cover;
-    background-attachment: fixed;
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif; /* Clean font */
-    color: white; /* Text color for contrast */
-    height: 100%;
-    box-sizing: border-box;
-}
-
-/* Box-sizing for all elements */
-* {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-}
-
-/* Centered content with padding for readability */
+/* General body styling */
 body {
-    max-width: 900px; /* Limit content width for readability */
-    margin: 20px auto; /* Center content with spacing */
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #0072ff, #00c6ff);
+    color: white;
+    text-align: center;
+    margin: 0;
     padding: 20px;
 }
 
-/* Header styles */
+/* Header styling */
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    text-align: center;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    color: #ffffff; /* Standout header color */
 }
 
 h3 {
     font-size: 1.8em;
-    margin: 30px 0 10px 0;
+    margin: 40px 0 20px 0;
     text-transform: uppercase;
-    border-bottom: 2px solid white; /* Subtle divider */
+    border-bottom: 2px solid white;
+    display: inline-block;
     padding-bottom: 5px;
-    font-weight: 600;
-    color: #f0f0f0;
 }
 
-/* Link styles */
-a {
+/* Card container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line on smaller screens */
+    justify-content: center; /* Center the cards */
+    gap: 20px; /* Space between cards */
+    margin: 20px 0;
+}
+
+/* Individual cards */
+.card {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent card background */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px; /* Fixed card width for uniformity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+/* Card headers */
+.card h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+/* Card descriptions */
+.card p {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #cce7ff;
+}
+
+/* Card links */
+.card a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background: #0072ff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card a:hover {
+    background: white;
+    color: #0072ff;
+}
+
+/* Contact Info Section */
+.contact-info {
+    background: rgba(255, 255, 255, 0.1); /* Matches card style */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px auto;
+    width: 100%;
+    max-width: 600px; /* Limit width for readability */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between icon and text */
+    margin: 10px 0;
     font-size: 1.2em;
-    color: #cce7ff; /* Light blue for good contrast */
-    text-decoration: none; /* Remove default underline */
-    display: inline-block; /* Prevent collapse in layout */
-    margin: 10px 0; /* Spacing between links */
-    padding: 5px 10px;
-    transition: color 0.3s ease, background-color 0.3s ease;
-    border-radius: 5px; /* Subtle rounded corners */
 }
 
-a:hover {
-    color: #005cbf; /* Slightly darker blue for hover effect */
-    background-color: white; /* Highlight the link on hover */
+.contact-item i {
+    font-size: 1.5em; /* Slightly larger icon */
+    color: #0072ff; /* Blue to match the site's theme */
 }
 
-/* Horizontal rule styling */
-hr {
-    border: none;
-    border-top: 2px solid rgba(255, 255, 255, 0.5); /* Light white line */
-    margin: 20px 0; /* Spacing above and below */
+.contact-item a {
+    color: #cce7ff;
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
+
+.contact-item a:hover {
+    color: white;
+}
+
+
